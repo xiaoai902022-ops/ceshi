@@ -5,28 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 35.199.90.53
+  server: 216.238.116.204
+  port: 39533
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: br001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  server: 216.238.104.154
   port: 443
   udp: true
-  type: vless
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
-  tls: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-    short-id: b62a4da6cd1c4dd6
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: platform101.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
